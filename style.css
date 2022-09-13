@@ -1,0 +1,33 @@
+body,
+button,
+input {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.calculator {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 300px;
+  gap: 8px;
+  padding: 50px 40px;
+  border-radius: 16px;
+  background: black;
+}
+
+input {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+  height: 60%;
+  text-align: end;
+  padding-right: 1rem;
+}
+
+button {
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+}
